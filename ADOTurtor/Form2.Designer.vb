@@ -1,0 +1,139 @@
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class Form2
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.lblUsername = New System.Windows.Forms.Label()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.lblLogin = New System.Windows.Forms.Label()
+        Me.lblPassword = New System.Windows.Forms.Label()
+        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.btnRegister = New System.Windows.Forms.Button()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.ADOTurtor.My.Resources.Resources.hi
+        Me.PictureBox1.Location = New System.Drawing.Point(254, 24)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(142, 150)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'lblUsername
+        '
+        Me.lblUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblUsername.Location = New System.Drawing.Point(203, 272)
+        Me.lblUsername.Name = "lblUsername"
+        Me.lblUsername.Size = New System.Drawing.Size(101, 35)
+        Me.lblUsername.TabIndex = 1
+        Me.lblUsername.Text = "Username :"
+        Me.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'txtUsername
+        '
+        Me.txtUsername.Location = New System.Drawing.Point(319, 278)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(152, 22)
+        Me.txtUsername.TabIndex = 2
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Location = New System.Drawing.Point(319, 326)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(152, 22)
+        Me.txtPassword.TabIndex = 4
+        '
+        'lblLogin
+        '
+        Me.lblLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLogin.Location = New System.Drawing.Point(199, 191)
+        Me.lblLogin.Name = "lblLogin"
+        Me.lblLogin.Size = New System.Drawing.Size(266, 56)
+        Me.lblLogin.TabIndex = 5
+        Me.lblLogin.Text = "Login Form"
+        Me.lblLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'lblPassword
+        '
+        Me.lblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPassword.Location = New System.Drawing.Point(203, 320)
+        Me.lblPassword.Name = "lblPassword"
+        Me.lblPassword.Size = New System.Drawing.Size(101, 35)
+        Me.lblPassword.TabIndex = 6
+        Me.lblPassword.Text = "Password :"
+        Me.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'btnLogin
+        '
+        Me.btnLogin.Location = New System.Drawing.Point(206, 394)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(108, 32)
+        Me.btnLogin.TabIndex = 7
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = True
+        '
+        'btnRegister
+        '
+        Me.btnRegister.Location = New System.Drawing.Point(363, 394)
+        Me.btnRegister.Name = "btnRegister"
+        Me.btnRegister.Size = New System.Drawing.Size(108, 32)
+        Me.btnRegister.TabIndex = 8
+        Me.btnRegister.Text = "Register"
+        Me.btnRegister.UseVisualStyleBackColor = True
+        '
+        'Form2
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(661, 562)
+        Me.Controls.Add(Me.btnRegister)
+        Me.Controls.Add(Me.btnLogin)
+        Me.Controls.Add(Me.lblPassword)
+        Me.Controls.Add(Me.lblLogin)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtUsername)
+        Me.Controls.Add(Me.lblUsername)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Name = "Form2"
+        Me.Text = "Login Form"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents lblUsername As Label
+    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents lblLogin As Label
+    Friend WithEvents lblPassword As Label
+    Friend WithEvents btnLogin As Button
+    Friend WithEvents btnRegister As Button
+End Class
