@@ -214,4 +214,11 @@ Public Class Form1
         connection.Close()
         MessageBox.Show("Total Items: " & count)
     End Sub
+
+    Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
+        ' Show the login form and close the main form
+        Dim loginForm As New Form2
+        loginForm.Show()
+        Me.Close()
+    End Sub
 End Class

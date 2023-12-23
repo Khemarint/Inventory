@@ -31,16 +31,10 @@ Public Class Form2
         connection.Close()
     End Sub
 
-    Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnRegister.Click
-        Dim cmd As New SqlCommand("INSERT INTO UserLogin (Username, Password) VALUES (@Username, @Password)", connection)
+    Private Sub btnRegister_Click(sender As Object, e As EventArgs) Handles btnGoRegister.Click
+        Dim registerForm As New Form4
 
-        cmd.Parameters.AddWithValue("@Username", txtUsername.Text)
-        cmd.Parameters.AddWithValue("@Password", txtPassword.Text)
-
-        connection.Open()
-        cmd.ExecuteNonQuery()
-        connection.Close()
-
-        MessageBox.Show("User has been registered.")
+        registerForm.Show()
+        Me.Hide()
     End Sub
 End Class

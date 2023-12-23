@@ -23,31 +23,19 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.lblUsername = New System.Windows.Forms.Label()
         Me.txtUsername = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.lblLogin = New System.Windows.Forms.Label()
         Me.lblPassword = New System.Windows.Forms.Label()
         Me.btnLogin = New System.Windows.Forms.Button()
-        Me.btnRegister = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnGoRegister = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.ADOTurtor.My.Resources.Resources.hi
-        Me.PictureBox1.Location = New System.Drawing.Point(254, 24)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(142, 150)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
         '
         'lblUsername
         '
         Me.lblUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUsername.Location = New System.Drawing.Point(203, 272)
+        Me.lblUsername.Location = New System.Drawing.Point(195, 146)
         Me.lblUsername.Name = "lblUsername"
         Me.lblUsername.Size = New System.Drawing.Size(101, 35)
         Me.lblUsername.TabIndex = 1
@@ -56,14 +44,14 @@ Partial Class Form2
         '
         'txtUsername
         '
-        Me.txtUsername.Location = New System.Drawing.Point(319, 278)
+        Me.txtUsername.Location = New System.Drawing.Point(311, 152)
         Me.txtUsername.Name = "txtUsername"
         Me.txtUsername.Size = New System.Drawing.Size(152, 22)
         Me.txtUsername.TabIndex = 2
         '
         'txtPassword
         '
-        Me.txtPassword.Location = New System.Drawing.Point(319, 326)
+        Me.txtPassword.Location = New System.Drawing.Point(311, 200)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.Size = New System.Drawing.Size(152, 22)
         Me.txtPassword.TabIndex = 4
@@ -71,7 +59,7 @@ Partial Class Form2
         'lblLogin
         '
         Me.lblLogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLogin.Location = New System.Drawing.Point(199, 191)
+        Me.lblLogin.Location = New System.Drawing.Point(197, 44)
         Me.lblLogin.Name = "lblLogin"
         Me.lblLogin.Size = New System.Drawing.Size(266, 56)
         Me.lblLogin.TabIndex = 5
@@ -81,7 +69,7 @@ Partial Class Form2
         'lblPassword
         '
         Me.lblPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPassword.Location = New System.Drawing.Point(203, 320)
+        Me.lblPassword.Location = New System.Drawing.Point(195, 194)
         Me.lblPassword.Name = "lblPassword"
         Me.lblPassword.Size = New System.Drawing.Size(101, 35)
         Me.lblPassword.TabIndex = 6
@@ -90,50 +78,47 @@ Partial Class Form2
         '
         'btnLogin
         '
-        Me.btnLogin.Location = New System.Drawing.Point(206, 394)
+        Me.btnLogin.Location = New System.Drawing.Point(198, 268)
         Me.btnLogin.Name = "btnLogin"
         Me.btnLogin.Size = New System.Drawing.Size(108, 32)
         Me.btnLogin.TabIndex = 7
         Me.btnLogin.Text = "Login"
         Me.btnLogin.UseVisualStyleBackColor = True
         '
-        'btnRegister
+        'btnGoRegister
         '
-        Me.btnRegister.Location = New System.Drawing.Point(363, 394)
-        Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(108, 32)
-        Me.btnRegister.TabIndex = 8
-        Me.btnRegister.Text = "Register"
-        Me.btnRegister.UseVisualStyleBackColor = True
+        Me.btnGoRegister.Location = New System.Drawing.Point(355, 268)
+        Me.btnGoRegister.Name = "btnGoRegister"
+        Me.btnGoRegister.Size = New System.Drawing.Size(108, 32)
+        Me.btnGoRegister.TabIndex = 8
+        Me.btnGoRegister.Text = "Register"
+        Me.btnGoRegister.UseVisualStyleBackColor = True
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(661, 562)
-        Me.Controls.Add(Me.btnRegister)
+        Me.Controls.Add(Me.btnGoRegister)
         Me.Controls.Add(Me.btnLogin)
         Me.Controls.Add(Me.lblPassword)
         Me.Controls.Add(Me.lblLogin)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUsername)
         Me.Controls.Add(Me.lblUsername)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form2"
-        Me.Text = "Login Form"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Text = "Inventory Management"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblUsername As Label
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents lblLogin As Label
     Friend WithEvents lblPassword As Label
     Friend WithEvents btnLogin As Button
-    Friend WithEvents btnRegister As Button
+    Friend WithEvents btnGoRegister As Button
 End Class

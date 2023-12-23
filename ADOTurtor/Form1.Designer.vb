@@ -40,6 +40,7 @@ Partial Class Form1
         Me.btnFind = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnAll = New System.Windows.Forms.Button()
+        Me.btnBack = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -47,7 +48,7 @@ Partial Class Form1
         'lblID
         '
         Me.lblID.AutoSize = True
-        Me.lblID.Location = New System.Drawing.Point(69, 95)
+        Me.lblID.Location = New System.Drawing.Point(69, 102)
         Me.lblID.Name = "lblID"
         Me.lblID.Size = New System.Drawing.Size(26, 16)
         Me.lblID.TabIndex = 0
@@ -55,14 +56,14 @@ Partial Class Form1
         '
         'TextBoxID
         '
-        Me.TextBoxID.Location = New System.Drawing.Point(98, 92)
+        Me.TextBoxID.Location = New System.Drawing.Point(98, 99)
         Me.TextBoxID.Name = "TextBoxID"
         Me.TextBoxID.Size = New System.Drawing.Size(135, 22)
         Me.TextBoxID.TabIndex = 1
         '
         'TextBoxName
         '
-        Me.TextBoxName.Location = New System.Drawing.Point(98, 142)
+        Me.TextBoxName.Location = New System.Drawing.Point(98, 149)
         Me.TextBoxName.Name = "TextBoxName"
         Me.TextBoxName.Size = New System.Drawing.Size(135, 22)
         Me.TextBoxName.TabIndex = 3
@@ -70,7 +71,7 @@ Partial Class Form1
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(45, 145)
+        Me.lblName.Location = New System.Drawing.Point(45, 152)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(50, 16)
         Me.lblName.TabIndex = 2
@@ -78,7 +79,7 @@ Partial Class Form1
         '
         'TextBoxDesc
         '
-        Me.TextBoxDesc.Location = New System.Drawing.Point(98, 195)
+        Me.TextBoxDesc.Location = New System.Drawing.Point(98, 202)
         Me.TextBoxDesc.Name = "TextBoxDesc"
         Me.TextBoxDesc.Size = New System.Drawing.Size(135, 22)
         Me.TextBoxDesc.TabIndex = 5
@@ -86,7 +87,7 @@ Partial Class Form1
         'lblDescription
         '
         Me.lblDescription.AutoSize = True
-        Me.lblDescription.Location = New System.Drawing.Point(14, 198)
+        Me.lblDescription.Location = New System.Drawing.Point(14, 205)
         Me.lblDescription.Name = "lblDescription"
         Me.lblDescription.Size = New System.Drawing.Size(81, 16)
         Me.lblDescription.TabIndex = 4
@@ -152,7 +153,7 @@ Partial Class Form1
         '
         'TextBoxSearch
         '
-        Me.TextBoxSearch.Location = New System.Drawing.Point(98, 43)
+        Me.TextBoxSearch.Location = New System.Drawing.Point(98, 50)
         Me.TextBoxSearch.Name = "TextBoxSearch"
         Me.TextBoxSearch.Size = New System.Drawing.Size(135, 22)
         Me.TextBoxSearch.TabIndex = 13
@@ -160,7 +161,7 @@ Partial Class Form1
         'lblSearch
         '
         Me.lblSearch.AutoSize = True
-        Me.lblSearch.Location = New System.Drawing.Point(40, 46)
+        Me.lblSearch.Location = New System.Drawing.Point(40, 53)
         Me.lblSearch.Name = "lblSearch"
         Me.lblSearch.Size = New System.Drawing.Size(56, 16)
         Me.lblSearch.TabIndex = 12
@@ -177,11 +178,11 @@ Partial Class Form1
         '
         'btnClear
         '
-        Me.btnClear.Location = New System.Drawing.Point(109, 231)
+        Me.btnClear.Location = New System.Drawing.Point(111, 230)
         Me.btnClear.Name = "btnClear"
         Me.btnClear.Size = New System.Drawing.Size(92, 33)
         Me.btnClear.TabIndex = 15
-        Me.btnClear.Text = "Clear"
+        Me.btnClear.Text = "ClearInput"
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'btnAll
@@ -193,11 +194,21 @@ Partial Class Form1
         Me.btnAll.Text = "All"
         Me.btnAll.UseVisualStyleBackColor = True
         '
+        'btnBack
+        '
+        Me.btnBack.Location = New System.Drawing.Point(544, 230)
+        Me.btnBack.Name = "btnBack"
+        Me.btnBack.Size = New System.Drawing.Size(92, 33)
+        Me.btnBack.TabIndex = 17
+        Me.btnBack.Text = "BackLogin"
+        Me.btnBack.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(661, 562)
+        Me.Controls.Add(Me.btnBack)
         Me.Controls.Add(Me.btnAll)
         Me.Controls.Add(Me.btnClear)
         Me.Controls.Add(Me.btnFind)
@@ -218,7 +229,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Store Management"
+        Me.Text = "Inventory Management"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -243,4 +254,5 @@ Partial Class Form1
     Friend WithEvents btnFind As Button
     Friend WithEvents btnClear As Button
     Friend WithEvents btnAll As Button
+    Friend WithEvents btnBack As Button
 End Class
